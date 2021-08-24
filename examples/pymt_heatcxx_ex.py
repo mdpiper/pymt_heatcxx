@@ -2,7 +2,6 @@
 import numpy as np
 from pymt.models import HeatModel
 
-
 np.set_printoptions(formatter={"float": "{: 6.2f}".format})
 
 

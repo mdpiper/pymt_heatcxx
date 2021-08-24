@@ -1,7 +1,7 @@
 """Run the heatcxx model through its BMI in Python."""
 import numpy as np
-from pymt_heatcxx import HeatModel
 
+from pymt_heatcxx import HeatModel
 
 config_file = "config.txt"
 np.set_printoptions(formatter={"float": "{: 6.2f}".format})
