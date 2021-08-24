@@ -19,11 +19,13 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest]
         python-version: [3.9]
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - uses: conda-incubator/setup-miniconda@v2
         with:
@@ -43,6 +45,13 @@ jobs:
           mamba install --file=requirements-build.txt --file=requirements-library.txt
           mamba list
 
+      - name: Make C++ example
+        run: |
+          mkdir buildcxx && pushd buildcxx
+          cmake ../external/bmi-example-cxx -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX
+          make install
+          popd
+
       - name: Build and install package
         run: |
           pip install -e .
@@ -54,3 +63,12 @@ jobs:
         run: |
           python -c 'import pymt_heatcxx'
           bmi-test pymt_heatcxx.bmi:HeatModel -vvv
+
+      - name: Install example dependencies
+        run: mamba install pymt
+
+      - name: Run examples
+        working-directory: ${{ github.workspace }}/examples
+        run: |
+          python heatcxx_ex.py
+          python pymt_heatcxx_ex.py
