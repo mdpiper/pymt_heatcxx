@@ -1,0 +1,4 @@
+name: pymt_heatcxx
+language: c++
+package: pymt_heatcxx
+class: HeatModel
