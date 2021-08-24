@@ -1,0 +1,3 @@
+[submodule "external/bmi-example-cxx"]
+	path = external/bmi-example-cxx
+	url = https://github.com/csdms/bmi-example-cxx
