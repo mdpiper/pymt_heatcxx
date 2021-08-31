@@ -6,7 +6,7 @@ from libcpp.vector cimport vector
 
 cimport numpy as np
 import numpy as np
-# start: heatmodel.pyx
+# start: heatmodelcxx.pyx
 
 cdef extern from "bmi_heat.hxx":
     cdef cppclass BmiHeat:
@@ -70,10 +70,10 @@ cdef extern from "bmi_heat.hxx":
         void GetGridFaceNodes(const int grid, int *face_nodes)
         void GetGridNodesPerFace(const int grid, int *nodes_per_face)
 
-cdef class HeatModel:
+cdef class HeatModelCxx:
     cdef BmiHeat _bmi
 
-    METADATA = "../data/HeatModel"
+    METADATA = "../data/HeatModelCxx"
 
     def __cinit__(self):
         pass

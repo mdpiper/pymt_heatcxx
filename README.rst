@@ -14,14 +14,14 @@ pymt_heatcxx
         :target: https://pymt-heatcxx.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://github.com/pymt-lab/pymt_heatcxx/actions/workflows/test.yml/badge.svg
-        :target: https://github.com/pymt-lab/pymt_heatcxx/actions/workflows/test.yml
+.. image:: https://github.com/mdpiper/pymt_heatcxx/actions/workflows/test.yml/badge.svg
+        :target: https://github.com/mdpiper/pymt_heatcxx/actions/workflows/test.yml
 
-.. image:: https://github.com/pymt-lab/pymt_heatcxx/actions/workflows/flake8.yml/badge.svg
-        :target: https://github.com/pymt-lab/pymt_heatcxx/actions/workflows/flake8.yml
+.. image:: https://github.com/mdpiper/pymt_heatcxx/actions/workflows/flake8.yml/badge.svg
+        :target: https://github.com/mdpiper/pymt_heatcxx/actions/workflows/flake8.yml
 
-.. image:: https://github.com/pymt-lab/pymt_heatcxx/actions/workflows/black.yml/badge.svg
-        :target: https://github.com/pymt-lab/pymt_heatcxx/actions/workflows/black.yml
+.. image:: https://github.com/mdpiper/pymt_heatcxx/actions/workflows/black.yml/badge.svg
+        :target: https://github.com/mdpiper/pymt_heatcxx/actions/workflows/black.yml
 
 
 PyMT plugin for heatcxx model
@@ -33,11 +33,11 @@ PyMT plugin for heatcxx model
 
 
 
-========= ===================================
-Component PyMT
-========= ===================================
-HeatModel `from pymt.models import HeatModel`
-========= ===================================
+============ ======================================
+Component    PyMT
+============ ======================================
+HeatModelCxx `from pymt.models import HeatModelCxx`
+============ ======================================
 
 ---------------
 Installing pymt
