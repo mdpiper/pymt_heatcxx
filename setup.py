@@ -26,8 +26,8 @@ if sys.platform.startswith("win"):
 
 ext_modules = [
     Extension(
-        "pymt_heatcxx.lib.heatmodel",
-        ["pymt_heatcxx/lib/heatmodel.pyx"],
+        "pymt_heatcxx.lib.heatmodelcxx",
+        ["pymt_heatcxx/lib/heatmodelcxx.pyx"],
         libraries=libraries + ["bmiheatcxx"],
         **common_flags
     ),
@@ -35,7 +35,7 @@ ext_modules = [
 
 entry_points = {
     "pymt.plugins": [
-        "HeatModel=pymt_heatcxx.bmi:HeatModel",
+        "HeatModelCxx=pymt_heatcxx.bmi:HeatModelCxx",
     ]
 }
 

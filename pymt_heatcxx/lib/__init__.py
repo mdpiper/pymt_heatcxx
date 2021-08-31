@@ -1,7 +1,8 @@
 #! /usr/bin/env python
 
-from .heatmodel import HeatModel
+from .heatmodelcxx import HeatModelCxx
+
 
 __all__ = [
-    "HeatModel",
+    "HeatModelCxx",
 ]

@@ -58,7 +58,7 @@ pretty:
 	black setup.py pymt_heatcxx examples
 
 test: ## run tests quickly with the default Python
-	bmi-test pymt_heatcxx.bmi:HeatModel -vvv
+	bmi-test pymt_heatcxx.bmi:HeatModelCxx -vvv
 
 test-all: ## run tests on every Python version with tox
 	tox

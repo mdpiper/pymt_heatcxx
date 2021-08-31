@@ -1,5 +1,5 @@
 [library]
-[library.HeatModel]
+[library.HeatModelCxx]
 language = "c++"
 library = "bmiheatcxx"
 header = "bmi_heat.hxx"

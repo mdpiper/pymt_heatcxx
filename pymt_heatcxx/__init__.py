@@ -4,8 +4,8 @@ import pkg_resources
 __version__ = pkg_resources.get_distribution("pymt_heatcxx").version
 
 
-from .bmi import HeatModel
+from .bmi import HeatModelCxx
 
 __all__ = [
-    "HeatModel",
+    "HeatModelCxx",
 ]
