@@ -5,6 +5,7 @@ Changelog for pymt_heatcxx
 ----------------
 
 - Rename component from HeatModel to HeatModelCxx (#1)
+- Show total temperature in BMI example (#2)
 
 
 0.1 (2021-08-24)
