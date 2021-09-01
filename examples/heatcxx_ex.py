@@ -55,6 +55,7 @@ print(" - initial values (flattened):")
 print(val)
 print(" - initial values (gridded):")
 print(val.reshape(grid_shape))
+print(" -- total temperature:", val.sum())
 
 # Set new initial temperature values.
 new = np.zeros(grid_size, dtype=float)
@@ -66,6 +67,7 @@ print(" - new initial values (flattened):")
 print(val)
 print(" - new initial values (gridded):")
 print(val.reshape(grid_shape))
+print(" -- total temperature:", val.sum())
 
 # Advance the model by one time step.
 m.update()
@@ -74,6 +76,7 @@ val = np.empty(grid_size, dtype=float)
 m.get_value(var_name, val)
 print(" - updated values (gridded):")
 print(val.reshape(grid_shape))
+print(" -- total temperature:", val.sum())
 
 # # Get a reference to the temperature values and check that it updates.
 # print(" - values (by ref, gridded) at time {}:".format(m.get_current_time()))
@@ -91,6 +94,7 @@ m.get_value(var_name, val)
 print(" - updated values (gridded):")
 print(val.reshape(grid_shape))
 # print(ref.reshape(grid_shape))
+print(" -- total temperature:", val.sum())
 
 # Finalize the model.
 m.finalize()
